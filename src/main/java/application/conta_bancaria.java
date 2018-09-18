@@ -1,17 +1,17 @@
 package application;
 
 public class conta_bancaria {
-	int nroDeConta;
-	int agencia;
-	int cpf;
-	int telefone;
-	int cep;
-	float saldo;
-	float saldoPoupança;
-	String nome;
-	boolean usoDeChequeEspecial;
-	float renda;
-	int limiteChequeEspecial;
+	public int nroDeConta;
+	public int agencia;
+	private int cpf;
+	private int telefone;
+	private int cep;
+	private float saldo;
+	private float saldoPoupança;
+	private String nome;
+	private float renda;
+	private int limiteChequeEspecial;
+	private boolean usandoChequeEspecial;
 	
 	public conta_bancaria(float renda, String nome, int nroDeConta, int agencia, int cpf, int telefone, int cep) {
 		super();
@@ -23,6 +23,7 @@ public class conta_bancaria {
 		this.cep = cep;
 		this.saldo = 0f;
 		this.saldoPoupança = 0f;
+		this.usandoChequeEspecial = false;
 	}
 	
 	public void status() {
@@ -90,5 +91,25 @@ public class conta_bancaria {
 	}
 	public void setSaldoPoupança(float saldoPoupança) {
 		this.saldoPoupança = saldoPoupança;
+	}
+
+	public int getLimiteChequeEspecial() {
+		return limiteChequeEspecial;
+	}
+
+	public void setLimiteChequeEspecial(int limiteChequeEspecial) {
+		this.limiteChequeEspecial = limiteChequeEspecial;
+	}
+
+	public float getSaldoPoupança() {
+		return saldoPoupança;
+	}
+
+	public boolean getUsandoChequeEspecial() {
+		return usandoChequeEspecial;
+	}
+
+	public void setUsandoChequeEspecial(boolean usandoChequeEspecial) {
+		this.usandoChequeEspecial = usandoChequeEspecial;
 	}
 }
