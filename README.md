@@ -1,6 +1,6 @@
 # personal_bank 
 
-# This project has the purpose of developing programming knowledge and skill
-# No market or financial intention 
+This project has the purpose of developing programming knowledge and skill
+No market or financial intention 
 
-# Author @leomhcorrea
+Author @leomhcorrea
